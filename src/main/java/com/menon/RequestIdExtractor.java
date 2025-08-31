@@ -6,10 +6,9 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-public class RequestIdExtractor
-{
+public class RequestIdExtractor {
 
-    public  String getRequestId(HttpServletRequest request) {
+    public String getRequestId(HttpServletRequest request) {
         // Check for the request ID header
         String requestId = request.getHeader("X-Request-ID");
 
@@ -30,7 +29,7 @@ public class RequestIdExtractor
         return requestId;
     }
 
-    private  String generateUniqueId() {
+    private String generateUniqueId() {
         // Generate a unique ID using a UUID or a custom logic
         return UUID.randomUUID().toString();
     }

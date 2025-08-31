@@ -10,7 +10,6 @@ import java.time.Duration;
 @Configuration
 public class ResilienceConfig {
 
-
     @Bean
     public CircuitBreakerConfig circuitBreakerConfig() {
         return CircuitBreakerConfig.custom()
@@ -22,13 +21,12 @@ public class ResilienceConfig {
     }
 
 
-
     @Bean
     public RetryConfig retryConfig() {
-    return RetryConfig.custom()
-            .maxAttempts(3)
-            .waitDuration(Duration.ofMillis(100))
-            .retryExceptions(Exception.class)
-            .build();
+        return RetryConfig.custom()
+                .maxAttempts(3)
+                .waitDuration(Duration.ofMillis(100))
+                .retryExceptions(Exception.class)
+                .build();
     }
 }
