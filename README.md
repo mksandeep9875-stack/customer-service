@@ -31,13 +31,15 @@ The application properties will be taken from the profile from https://github.co
 ---
 ## Dependencies
 
-Spring Boot Starter Web
+-Spring Boot Starter Web
 
-Spring Boot Starter Actuator
+-Spring Boot Starter Actuator
 
-Spring Boot Starter MongoDB (depending on your database)
+-Spring Boot Starter MongoDB (depending on your database)
 
-Spring Cloud Config Client, Eureka Client
+-Spring Cloud Config Client
+
+-Eureka Client
 
 
 ---
